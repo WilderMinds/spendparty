@@ -16,7 +16,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            com.samdev.core.ui.theme.SpendPartyTheme {
+            SpendPartyTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
@@ -40,7 +40,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    com.samdev.core.ui.theme.SpendPartyTheme {
+    SpendPartyTheme {
         Greeting("Android")
     }
 }
